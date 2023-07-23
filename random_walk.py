@@ -3,7 +3,7 @@ from random import choice
 class RandomWalk():
     """ Класс для генерирования слуйчайнных блуужданий"""
 
-    def __init__(self, num_points=5000):
+    def __init__(self, num_points=50000):
         """ Инициализирует атрибуты блужданий"""
         self.num_points = num_points
 

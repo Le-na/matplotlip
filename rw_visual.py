@@ -12,7 +12,7 @@ while True:
     fig, ax = plt.subplots()
     point_numbers = range(rw.num_points)
     ax.scatter(rw.x_values, rw.y_values, c=point_numbers,
-               cmap=plt.cm.Blues, edgecolor='none', s=15)
+               cmap=plt.cm.Blues, edgecolor='none', s=1)
 
     # Выделение первой и последней точек
     ax.scatter(0, 0, c="green", edgecolor='none', s=100)
