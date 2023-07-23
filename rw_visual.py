@@ -17,6 +17,10 @@ while True:
     # Выделение первой и последней точек
     ax.scatter(0, 0, c="green", edgecolor='none', s=100)
     ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolor='none', s=100)
+
+    #Удаление осей. переводят флаг видимости каждой оси в состояние False
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
     plt.show()
 
     keep_running = input("Make another walk? (y/n):")
