@@ -25,8 +25,9 @@ with open(filename) as f:
 # Нанесение данных на диаграмму
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, c='red')
-ax.plot(dates, lows, c="blue")
+ax.plot(dates, highs, c='red', alpha=0.5)
+ax.plot(dates, lows, c="blue", alpha=0.5)
+plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
 # Форматирование диаграммы
 plt.title("Daily high low temperatures - 2018", fontsize=24)
